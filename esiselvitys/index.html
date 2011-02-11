@@ -60,8 +60,12 @@ href="http://www.w3.org/DesignIssues/LinkedData">Linked Data</a>).
 Linking Open Datan ideana on esittää tietoa web-artikkeleissa tavalla,
 joka sallii tiedon linkittämisen helposti muuhun aiheeseen kuuluvaan
 tietoon.  Projektissa on kerätty suuria arkistoja käsitteitä ja dataa.
-Arkistot koostuvat RDF dataseteistä.
+Arkistot koostuvat enimmäkseen RDF-dataseteistä.
 </p>
+
+<div style="float: right;">
+<a href="http://richard.cyganiak.de/2007/10/lod/lod-datasets_2010-09-22_colored.svg"><img alt="Datasettien linkkejä visualisoiva graafi." src="images/lod-datasets_2010-09-22_colored.png" width="500"/></a>
+</div>
 
 <p>
 Nykyisin suuri osa verkossa olevasta tiedosta esitetään HTML-sivustoina
@@ -88,10 +92,6 @@ yhteen uusin perustein.
 </p>
 
 <p>
-<a href="http://richard.cyganiak.de/2007/10/lod/lod-datasets_2010-09-22_colored.svg">Datasettien linkkejä visualisoiva graafi. (xxx kuva tähän)</a>
-</p>
-
-<p>
 <a href="http://www.ted.com/index.php/talks/tim_berners_lee_on_the_next_web.html">Tim Berners-Leen puhe TEDissä</a>
 </p>
 
@@ -99,16 +99,17 @@ yhteen uusin perustein.
 
 <h3>RDF</h3>
 
-<p>Nykyisellään tietoa tallennetaan esimerkiksi XML:n tapaan hierarkisesti 
-tai relationaalisiin tietokantoihin, kuten MySQL. RDF on yksi semanttisen 
-verkon kulmakivistä määrittäen graafisen tietokannan jonka ympärille 
-semanttinen verkko rakentuu maailmanlaajuisesti.[Int]
+<p>Nykyisellään tietoa tallennetaan esimerkiksi XML:n tapaan
+hierarkisiin dokumentteihin tai relationaalisiin tietokantoihin, kuten
+MySQL. RDF on yksi semanttisen verkon kulmakivistä määrittäen graafisen
+tietokannan jonka ympärille semanttinen verkko rakentuu
+maailmanlaajuisesti.[<a href="#int">Int</a>]
 </p>
 
 <p>Perinteisten tietomuotojen rakenteessa eri elementit ovat eri asemassa 
 toisiinsa nähden - toiset elementit ovat tärkeämpiä ja etusijalla toisiin nähden. 
 Esimerkiksi XML dokumentissa kaikki elementit sijoittuvat toisten elementtien 
-sisälle, paitsi korkeimman tason elementti.[Int]
+sisälle, paitsi korkeimman tason elementti.[<a href="#int">Int</a>]
 </p>
 
 <p>RDF (Resource Description Framework) on standardoitu malli tiedon 
@@ -117,12 +118,12 @@ käsittelemään monen eri tietomallin sisältämää tietoa yhdessä. RDF laaje
 verkon linkkirakennetta käyttäen URI:a nimeämään eri elementtien välisiä 
 suhteita sekä linkkien osoittajia ja osoitettavia. Toimintamalli mahdollistaa 
 muodostamaan eri lähteistä muodostetun tiedon miksaamista, tarkastelemista ja 
-jakamista eri sovellusten välillä.[RDF] RDF määrittää graafisen tietokannan.</p>
+jakamista eri sovellusten välillä.[<a href="#rdf">RDF</a>] RDF määrittää graafisen tietokannan.</p>
 
 <p>Graafisessa tietokannassa ei ole hierarkiaa ja tieto koostuu tiedoista jotka 
 liittyvät toisiinsa. Data graafin eri osia kutsutaan subjektiksi, predikaatiksi ja 
 objektiksi, jotka yhdessä muodostavat "triplen" (triple). Subjekti on pallo nuolen 
-kannassa, predikaatti on nuoli ja objektina pidetään sitä, mihin nuoli osoittaa.[RDF]</p>
+kannassa, predikaatti on nuoli ja objektina pidetään sitä, mihin nuoli osoittaa.[<a href="#rdf">RDF</a>]</p>
 
 <!-- http://www.linkeddatatools.com/images/example_graph.png -->
 <img src="images/example_graph.png" alt="esimerkkigraafi"/> 
@@ -150,6 +151,9 @@ LOD-projektissa on jossakin OWL-formaatissa.
 
 Kyselykieli RDF-muotoiselle tiedolle.[<a href="#sparql">SPARQL</a>][<a
 href="#sparql-wiki">SPARQL-WIKI</a>]
+
+Kyselyä voi tarkentaa lisäämällä termejä ja kyselyt voivat olla
+hajautettuja.
 
 <h2>Selaimet</h2>
 
@@ -181,7 +185,7 @@ Selain tuntui pikavilkaisulla hyvin epäluotettavalta.
 
 Kokeillessa 8.2.2011 serveri pudonnut verkosta.  Googlen välimuistista
 sivu löytyy päiväykselle 1.2.2011, joten ehkäpä ohjelmisto on
-testattavissa myöhemmin.
+testattavissa myöhemmin.[<a href="#razor">RAZOR</a>]
 
 <h3>Zitgist RDF Browser</h3>
 
@@ -242,15 +246,17 @@ Wikipedian tietoa muunnettuna RDF-tripleteiksi. [<a
 href="#dbpedia">DBPEDIA</a>]
 </li>
 <li>
+<a href="http://wordnet.princeton.edu/">Wordnettiin</a> voidaan viitata <a href="http://semanticweb.cs.vu.nl/lod/wn30/">RDF linkeillä</a>.[<a href="#wordnet">WORDNET</a>]
 </li>
 </ul>
 <h2>Viitteet</h2>
 
+Kaikki linkit haettu 11.2.2011.
+
 <ul>
 
 <li >[OWL] <a id="owl2-primer-basic-notions"
-href="http://www.w3.org/TR/2009/REC-owl2-primer-20091027/#Modeling_Knowledge:_Basic_Notions">http://www.w3.org/TR/2009/REC-owl2-primer-20091027/#Modeling_Knowledge:_Basic_Notions</a>,
-8.2.2011.</li>
+href="http://www.w3.org/TR/2009/REC-owl2-primer-20091027/#Modeling_Knowledge:_Basic_Notions">http://www.w3.org/TR/2009/REC-owl2-primer-20091027/#Modeling_Knowledge:_Basic_Notions</a></li>
 
 <li>[SPARQL] <a id="sparql" href="http://www.w3.org/TR/rdf-sparql-query/">http://www.w3.org/TR/rdf-sparql-query/</a></li>
 
@@ -266,7 +272,13 @@ href="http://www.w3.org/RDF/">http://www.w3.org/RDF/</a></li>
 
 <li>[Zit] <a id="zit" href="http://fgiasson.com/blog/index.php/2007/11/30/zitgist-dataviewer/">http://fgiasson.com/blog/index.php/2007/11/30/zitgist-dataviewer//<a></li>
 
+<li>[RAZOR] <a id="razor" href="http://www.razorbase.com/">http://www.razorbase.com/</a>
+</li>
+
 <li>[DBPEDIA] <a id="dbpedia" href="http://wiki.dbpedia.org/">http://wiki.dbpedia.org/</a>
+</li>
+
+<li>[WORDNET] <a id="wordnet" href="http://semanticweb.cs.vu.nl/lod/wn30/">http://semanticweb.cs.vu.nl/lod/wn30/</a>
 </li>
 
 </ul>
