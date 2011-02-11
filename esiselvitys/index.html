@@ -51,7 +51,7 @@ Assistentti: Markku Laine, markku.laine at tml.hut.fi
 <p>
 Tämän harjoitustyön aiheena on <a
 href="http://www.w3.org/wiki/SweoIG/TaskForces/CommunityProjects/LinkingOpenData">Linking
-Open Data</a>, W3C projekti joka lähti <a
+Open Data</a>, W3C-projekti, joka lähti <a
 href="http://en.wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Leen</a>
 aloitteesta muodostaa avointa dataa <a
 href="http://en.wikipedia.org/wiki/Semantic_web">semanttisen webin</a>
@@ -68,10 +68,10 @@ Arkistot koostuvat enimmäkseen RDF-dataseteistä.
 </div>
 
 <p>
-Nykyisin suuri osa verkossa olevasta tiedosta esitetään HTML-sivustoina
+Nykyisin suuri osa verkossa olevasta tiedosta esitetään HTML-sivustoina,
 jotka on linkitetty toisiinsa hyperlinkeillä.  Tietokoneet pystyvät
-lukemaan sivuja, mutta avainsanojen käsittelemistä lukuunottamatta koneet
-eivät ymmärrä sivustojen sisältöä.
+lukemaan sivuja, mutta avainsanojen käsittelemistä lukuun ottamatta
+koneet eivät ymmärrä sivustojen sisältöä.
 </p>
 
 <p>
@@ -100,30 +100,34 @@ yhteen uusin perustein.
 <h3>RDF</h3>
 
 <p>Nykyisellään tietoa tallennetaan esimerkiksi XML:n tapaan
-hierarkisiin dokumentteihin tai relationaalisiin tietokantoihin, kuten
+hierarkkisiin dokumentteihin tai relationaalisiin tietokantoihin, kuten
 MySQL. RDF on yksi semanttisen verkon kulmakivistä määrittäen graafisen
-tietokannan jonka ympärille semanttinen verkko rakentuu
+tietokannan, jonka ympärille semanttinen verkko rakentuu
 maailmanlaajuisesti.[<a href="#int">Int</a>]
 </p>
 
 <p>Perinteisten tietomuotojen rakenteessa eri elementit ovat eri asemassa 
 toisiinsa nähden - toiset elementit ovat tärkeämpiä ja etusijalla toisiin nähden. 
-Esimerkiksi XML dokumentissa kaikki elementit sijoittuvat toisten elementtien 
+Esimerkiksi XML-dokumentissa kaikki elementit sijoittuvat toisten elementtien 
 sisälle, paitsi korkeimman tason elementti.[<a href="#int">Int</a>]
 </p>
 
-<p>RDF (Resource Description Framework) on standardoitu malli tiedon 
-vaihtamiseen verkossa. RDF:n ominaisuuksiin kuuluu että se pystyy 
-käsittelemään monen eri tietomallin sisältämää tietoa yhdessä. RDF laajentaa 
-verkon linkkirakennetta käyttäen URI:a nimeämään eri elementtien välisiä 
-suhteita sekä linkkien osoittajia ja osoitettavia. Toimintamalli mahdollistaa 
-muodostamaan eri lähteistä muodostetun tiedon miksaamista, tarkastelemista ja 
-jakamista eri sovellusten välillä.[<a href="#rdf">RDF</a>] RDF määrittää graafisen tietokannan.</p>
+<p>RDF (Resource Description Framework) on standardoitu malli tiedon
+vaihtamiseen verkossa. RDF:n ominaisuuksiin kuuluu että se pystyy
+käsittelemään monen eri tietomallin sisältämää tietoa yhdessä. RDF
+laajentaa verkon linkkirakennetta käyttäen URI:a nimeämään eri
+elementtien välisiä suhteita sekä linkkien osoittajia ja
+osoitettavia. Toimintamalli mahdollistaa muodostamaan eri lähteistä
+muodostetun tiedon uudelleenjärjestämistä, tarkastelemista ja jakamista
+eri sovellusten välillä.[<a href="#rdf">RDF</a>] RDF määrittää graafisen
+tietokannan.</p>
 
-<p>Graafisessa tietokannassa ei ole hierarkiaa ja tieto koostuu tiedoista jotka 
-liittyvät toisiinsa. Data graafin eri osia kutsutaan subjektiksi, predikaatiksi ja 
-objektiksi, jotka yhdessä muodostavat "triplen" (triple). Subjekti on pallo nuolen 
-kannassa, predikaatti on nuoli ja objektina pidetään sitä, mihin nuoli osoittaa.[<a href="#rdf">RDF</a>]</p>
+<p>Graafisessa tietokannassa ei ole hierarkiaa ja tieto koostuu
+tiedoista, jotka liittyvät toisiinsa. Graafin eri osia kutsutaan
+subjektiksi, predikaatiksi ja objektiksi, jotka yhdessä muodostavat
+"triplen" (triple). Subjekti on pallo nuolen kannassa, predikaatti on
+nuoli ja objektina pidetään sitä, mihin nuoli osoittaa.[<a
+href="#rdf">RDF</a>]</p>
 
 <!-- http://www.linkeddatatools.com/images/example_graph.png -->
 <img src="images/example_graph.png" alt="esimerkkigraafi"/> 
@@ -131,8 +135,9 @@ kannassa, predikaatti on nuoli ja objektina pidetään sitä, mihin nuoli osoitt
 
 <h4>RDF/XML</h4>
 
-XML-pohjainen serialisaatioformaatti RDF:lle. RDF/XML on W3C:n kehittämä syntaksi jolla tuotetaan 
-RDF graafeja XML sokumentteihin. RDF/XML on yksi suosituimmista RDF muodoista verkossa. 
+RDF/XML on XML-pohjainen serialisaatioformaatti RDF:lle. RDF/XML on
+W3C:n kehittämä syntaksi, jolla tuotetaan RDF-graafeja XML
+dokumentteihin. RDF/XML on yksi suosituimmista RDF:n murteista verkossa.
 
 <h3>OWL</h3>
 
@@ -143,14 +148,14 @@ tarkoitettu kieli<a href="#owl2-primer-basic-notions">[OWL]</a>.
 </p>
 
 <p>
-Kaikkien OWL implementaatioiden pitää ymmärtää RDF/XML:ää.  Paljon dataa
-LOD-projektissa on jossakin OWL-formaatissa.
+Kaikkien OWL-implementaatioiden pitää ymmärtää RDF/XML:ää.  
+LOD-projektin tiedosta suurin osa on jossakin OWL-formaatissa.
 </p>
 
 <h3>SPARQL</h3>
 
-Kyselykieli RDF-muotoiselle tiedolle.[<a href="#sparql">SPARQL</a>][<a
-href="#sparql-wiki">SPARQL-WIKI</a>]
+SPAQRL on kyselykieli RDF-muotoiselle tiedolle.[<a
+href="#sparql">SPARQL</a>][<a href="#sparql-wiki">SPARQL-WIKI</a>]
 
 Kyselyä voi tarkentaa lisäämällä termejä ja kyselyt voivat olla
 hajautettuja.
@@ -162,11 +167,11 @@ hajautettuja.
 <a
 href="http://dig.csail.mit.edu/2005/ajar/ajaw/About.html">Tabulator</a>
 on selain semanttiselle webille.  Selain on rakennuttu lisäkkeeksi
-Firefox-webiselaimeen.
+Firefox-selaimeen.
 
-Selainta ei löytynyt ainakaan suoralla Firefoxin Add-on haulla, tilalle
-tarjottiin <a href="http://sioc-project.org/firefox">Semantic Radar</a>
-lisäkettä, ks. <a href="#sradar">alla</a>.
+Selainta ei löytynyt ainakaan suoralla Firefoxin Add-on-haulla, tilalle
+tarjottiin <a href="http://sioc-project.org/firefox">Semantic
+Radar</a>-lisäkettä, ks. <a href="#sradar">alla</a>.
 
 <h3 id="sradar">Semantic Radar</h3>
 
@@ -183,14 +188,14 @@ Selain tuntui pikavilkaisulla hyvin epäluotettavalta.
 
 <h3>Razorbase</h3>
 
-Kokeillessa 8.2.2011 serveri pudonnut verkosta.  Googlen välimuistista
-sivu löytyy päiväykselle 1.2.2011, joten ehkäpä ohjelmisto on
-testattavissa myöhemmin.[<a href="#razor">RAZOR</a>]
+Kokeillessa 8.2.2011 serveri oli pudonnut verkosta.  Googlen
+välimuistista sivu löytyy päiväykselle 1.2.2011, joten ehkäpä ohjelmisto
+on testattavissa myöhemmin.[<a href="#razor">RAZOR</a>]
 
 <h3>Zitgist RDF Browser</h3>
 
-Zitgist DataViewer tarjoaa käyttöliittymän joka muuttaa semanttisen
-verkon dataa muotoon jota on ihmisenä helppo tutkia. Järjestelmä ottaa
+Zitgist DataViewer tarjoaa käyttöliittymän, joka muuttaa semanttisen
+verkon dataa muotoon, jota on ihmisenä helppo tutkia. Järjestelmä ottaa
 vastaan tietolähteen, josta se poimii ja järjestelee datan helposti
 tarkasteltavaan muotoon.[<a href="#zit">Zit</a>]
 <br>
@@ -200,23 +205,23 @@ tarkasteltavaan muotoon.[<a href="#zit">Zit</a>]
 
 <h3>Quick & Dirty RDF Browser</h3>
 
-Nopea ja likainen - Toimii nopeasti, mutta ei tuota varsinaisesti ihmisen 
+Nopea ja likainen - toimii nopeasti, mutta ei tuota varsinaisesti ihmisen 
 luettavaksi tarkoitettua sisältöä. Kätevä esimerkiksi kun tarkastellaan 
-RDFn toiminnallisuutta.
+RDF:n toiminnallisuutta.
 <br>
 <a href="http://graphite.ecs.soton.ac.uk/browser/?uri=http%3A%2F%2Fwww.w3.org%2FPeople%2FBerners-Lee%2Fcard%23i">Esimerkki.</a>
 
 <h3>Sig.ma</h3>
 <p>
-Sig.ma on <a href="http://www.sindice.com/">Sinidicen</a> päällä 
-toimiva sovellus joka tarjoaa visuaalisesti ja interaktiivisesti verkkodataa 
-kokonaisuutena. Sig.ma etsii dataa annettujen avainsanojen perusteella 
-valimiiksi asetetuista lähteistä, joita voi halutessaan lisätä ja poistaa. 
-Toimii suhteellisen nopeasti ja käyttöliittymä vaikuttaa selkeältä. Kun 
-osoittaa hiirellä dataa, Sig.ma korostaa lähteet joista tieto on peräisin 
-- toimii myös toisin päin.[<a href="#sig">Sig</a>]
-<br><br>
-<a href="http://sig.ma/search?q=Tim%20Berners%20Lee">Esimerkki.</a>
+Sig.ma on <a href="http://www.sindice.com/">Sinidicen</a> päällä toimiva
+sovellus, joka tarjoaa visuaalisesti ja interaktiivisesti verkkodataa
+kokonaisuutena. Sig.ma etsii dataa annettujen avainsanojen perusteella
+valimiiksi asetetuista lähteistä, joita voi halutessaan lisätä ja
+poistaa.  Toimii suhteellisen nopeasti ja käyttöliittymä vaikuttaa
+selkeältä. Kun osoittaa hiirellä dataa, Sig.ma korostaa lähteet joista
+tieto on peräisin - toimii myös toisin päin.[<a href="#sig">Sig</a>]
+<br><br> <a
+href="http://sig.ma/search?q=Tim%20Berners%20Lee">Esimerkki.</a>
 </p>
 <p>
 <h3>OpenLink Data Explorer 0.28</h3> Toimii lisäosana Firefoxiin.  <a
@@ -232,9 +237,9 @@ data explorer.</a>
 <li>Objectviewer: ei toimi</li>
 
 <p>
-On mahdollista että joidenkin selaimien huonoon toimivuuteen syy löytyy
-jonkun/joidenkin yhteisten lähteitten putoaminen verkosta, josta
-selaimet eivät toipuneet.
+On mahdollista, että joidenkin selaimien huonoon toimivuuteen löytyy syy
+yhden tai useamman lähteen putoamiseen verkosta, josta selaimet eivät
+toipuneet.
 </p>
 
 <h2>Kiintoisia datasettejä</h2>
@@ -278,7 +283,7 @@ href="http://www.w3.org/RDF/">http://www.w3.org/RDF/</a></li>
 <li>[DBPEDIA] <a id="dbpedia" href="http://wiki.dbpedia.org/">http://wiki.dbpedia.org/</a>
 </li>
 
-<li>[WORDNET] <a id="wordnet" href="http://semanticweb.cs.vu.nl/lod/wn30/">http://semanticweb.cs.vu.nl/lod/wn30/</a>
+1<li>[WORDNET] <a id="wordnet" href="http://semanticweb.cs.vu.nl/lod/wn30/">http://semanticweb.cs.vu.nl/lod/wn30/</a>
 </li>
 
 </ul>
