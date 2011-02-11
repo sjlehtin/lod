@@ -124,7 +124,8 @@ liittyvät toisiinsa. Data graafin eri osia kutsutaan subjektiksi, predikaatiksi
 objektiksi, jotka yhdessä muodostavat "triplen" (triple). Subjekti on pallo nuolen 
 kannassa, predikaatti on nuoli ja objektina pidetään sitä, mihin nuoli osoittaa.[RDF]</p>
 
-<img src="http://www.linkeddatatools.com/images/example_graph.png" alt="esimerkkigraafi"/> 
+<!-- http://www.linkeddatatools.com/images/example_graph.png -->
+<img src="images/example_graph.png" alt="esimerkkigraafi"/> 
 <br>
 
 <h4>RDF/XML</h4>
@@ -137,7 +138,7 @@ RDF graafeja XML sokumentteihin. RDF/XML on yksi suosituimmista RDF muodoista ve
 <p>
 <a href="http://www.w3.org/TR/owl2-overview/">OWL (Web Ontology
 Language)</a> on semanttisessa webissä käytetty tietämyksen esittämiseen
-tarkoitettu kieli<a href="#owl2-primer-basic-notions">[x]</a>.  
+tarkoitettu kieli<a href="#owl2-primer-basic-notions">[OWL]</a>.  
 </p>
 
 <p>
@@ -147,7 +148,8 @@ LOD-projektissa on jossakin OWL-formaatissa.
 
 <h3>SPARQL</h3>
 
-Kyselykieli RDF-muotoiselle tiedolle.[x][x]
+Kyselykieli RDF-muotoiselle tiedolle.[<a href="#sparql">SPARQL</a>][<a
+href="#sparql-wiki">SPARQL-WIKI</a>]
 
 <h2>Selaimet</h2>
 
@@ -164,14 +166,16 @@ lisäkettä, ks. <a href="#sradar">alla</a>.
 
 <h3 id="sradar">Semantic Radar</h3>
 
-<a href="http://sioc-project.org/firefox">Semantic Radar</a>
+<p>
+<a href="http://sioc-project.org/firefox">Semantic Radar</a> lisää painikkeen Firefoxin status-riville.  Toimivuus ei vakuuttanut.
+</p>
 
 <h3>Linked Data Lite</h3>
 
-<a href="http://itunes.apple.com/us/app/linked-data-lite-web-on-steroids/id388098353?mt=8">
-Linked Data Lite<a> on <a href="">iPadille</a> ja <a
-href="">iPhonelle</a> suunnattu selain.  Selain tuntui pikavilkaisulla
-hyvin epäluotettavalta.
+<a href="http://itunes.apple.com/us/app/linked-data-lite-web-on-steroids/id388098353?mt=8">Linked Data Lite<a> on <a
+href="http://en.wikipedia.org/wiki/Iphone">iPadille</a> ja <a
+href="http://en.wikipedia.org/wiki/Ipad">iPhonelle</a> suunnattu selain.
+Selain tuntui pikavilkaisulla hyvin epäluotettavalta.
 
 <h3>Razorbase</h3>
 
@@ -181,9 +185,10 @@ testattavissa myöhemmin.
 
 <h3>Zitgist RDF Browser</h3>
 
-Zitgist DataViewer tarjoaa käyttöliittymän joka muuttaa semanttisen verkon 
-dataa muotoon jota on ihmisenä helppo tutkia. Järjestelmä ottaa vastaan 
-tietolähteen, josta se poimii ja järjestelee datan helposti tarkasteltavaan muotoon.[Zit]
+Zitgist DataViewer tarjoaa käyttöliittymän joka muuttaa semanttisen
+verkon dataa muotoon jota on ihmisenä helppo tutkia. Järjestelmä ottaa
+vastaan tietolähteen, josta se poimii ja järjestelee datan helposti
+tarkasteltavaan muotoon.[<a href="#zit">Zit</a>]
 <br>
 <a href="http://fgiasson.com/blog/index.php/2007/11/30/zitgist-dataviewer/">Tietoa</a><br>
 <a href="http://dataviewer.zitgist.com/?uri=http%3A//www.w3.org/People/Berners-Lee/card%23i">Esimerkki</a>
@@ -205,15 +210,16 @@ kokonaisuutena. Sig.ma etsii dataa annettujen avainsanojen perusteella
 valimiiksi asetetuista lähteistä, joita voi halutessaan lisätä ja poistaa. 
 Toimii suhteellisen nopeasti ja käyttöliittymä vaikuttaa selkeältä. Kun 
 osoittaa hiirellä dataa, Sig.ma korostaa lähteet joista tieto on peräisin 
-- toimii myös toisin päin.[Sig]
+- toimii myös toisin päin.[<a href="#sig">Sig</a>]
 <br><br>
 <a href="http://sig.ma/search?q=Tim%20Berners%20Lee">Esimerkki.</a>
 </p>
-<h3>OpenLink Data Explorer 0.28</h3>
-Toilmii lisäosana Firefoxiin.
-<a href="https://addons.mozilla.org/en-US/firefox/addon/openlink-data-explorer/">Openlink data explorer.</a>
-
-<h3>Muut Selaimet jotka eivät syystä tai toisesta toimineet:</h3>
+<p>
+<h3>OpenLink Data Explorer 0.28</h3> Toimii lisäosana Firefoxiin.  <a
+href="https://addons.mozilla.org/en-US/firefox/addon/openlink-data-explorer/">Openlink
+data explorer.</a>
+</p>
+<h3>Muut selaimet jotka eivät syystä tai toisesta toimineet:</h3>
 
 <li>zLinks: (Ei vielä testattu kunnolla)</li>
 <li>Fenfire: osoittaa W3C:ssä pdf-tiedostoon - ei selvitetty enempää</li>
@@ -221,33 +227,49 @@ Toilmii lisäosana Firefoxiin.
 <li>Disco: Ei toimi</li>
 <li>Objectviewer: ei toimi</li>
 
+<p>
+On mahdollista että joidenkin selaimien huonoon toimivuuteen syy löytyy
+jonkun/joidenkin yhteisten lähteitten putoaminen verkosta, josta
+selaimet eivät toipuneet.
+</p>
+
 <h2>Kiintoisia datasettejä</h2>
 
-<a href="http://wiki.dbpedia.org/">DBpedia</a> sisältää suuren
-määrän Wikipedian tietoa muunnettuna RDF-tripleteiksi.
-
+<ul>
+<li>
+<a href="http://wiki.dbpedia.org/">DBpedia</a> sisältää suuren määrän
+Wikipedian tietoa muunnettuna RDF-tripleteiksi. [<a
+href="#dbpedia">DBPEDIA</a>]
+</li>
+<li>
+</li>
+</ul>
 <h2>Viitteet</h2>
 
 <ul>
 
-<li >[x] xxx [WWW-dokumentti]<a id="owl2-primer-basic-notions"
+<li >[OWL] <a id="owl2-primer-basic-notions"
 href="http://www.w3.org/TR/2009/REC-owl2-primer-20091027/#Modeling_Knowledge:_Basic_Notions">http://www.w3.org/TR/2009/REC-owl2-primer-20091027/#Modeling_Knowledge:_Basic_Notions</a>,
 8.2.2011.</li>
 
-<li><a id="sparql" href="http://www.w3.org/TR/rdf-sparql-query/">http://www.w3.org/TR/rdf-sparql-query/</a></li>
+<li>[SPARQL] <a id="sparql" href="http://www.w3.org/TR/rdf-sparql-query/">http://www.w3.org/TR/rdf-sparql-query/</a></li>
 
-<li><a id="sparql-wp" href="http://en.wikipedia.org/wiki/SPARQL">http://en.wikipedia.org/wiki/SPARQL</a></li>
+<li>[SPARQL-WIKI] <a id="sparql-wiki" href="http://en.wikipedia.org/wiki/SPARQL">http://en.wikipedia.org/wiki/SPARQL</a></li>
 
-<li>[Int][http://www.linkeddatatools.com/introducing-rdf]</li>
+<li>[Int] <a id="int"
+href="http://www.linkeddatatools.com/introducing-rdf">http://www.linkeddatatools.com/introducing-rdf</a></li>
 
-<li>[RDF][http://www.w3.org/RDF/]</li>
+<li>[RDF] <a id="rdf"
+href="http://www.w3.org/RDF/">http://www.w3.org/RDF/</a></li>
 
-<li>[Sig]<a href="http://blog.sindice.com/2009/07/22/sigma-live-views-on-the-web-of-data/">Sig.ma ja Sindice</a></li>
+<li>[Sig] <a id="sig" href="http://blog.sindice.com/2009/07/22/sigma-live-views-on-the-web-of-data/">http://blog.sindice.com/2009/07/22/sigma-live-views-on-the-web-of-data/</a></li>
 
-<li>[Zit]<a href="http://fgiasson.com/blog/index.php/2007/11/30/zitgist-dataviewer/">http://fgiasson.com/blog/index.php/2007/11/30/zitgist-dataviewer//<a></li>
+<li>[Zit] <a id="zit" href="http://fgiasson.com/blog/index.php/2007/11/30/zitgist-dataviewer/">http://fgiasson.com/blog/index.php/2007/11/30/zitgist-dataviewer//<a></li>
 
+<li>[DBPEDIA] <a id="dbpedia" href="http://wiki.dbpedia.org/">http://wiki.dbpedia.org/</a>
+</li>
 
 </ul>
 
-</body> 
+</body>
 </html>
