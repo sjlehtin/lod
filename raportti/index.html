@@ -393,7 +393,7 @@ havaittiin toimivan niin hyvin, että niitä voisi tässä työssä hyödyntää
 linkitetyn tiedon tutkimiseen.
 </p>
 
-<h2>Raportti</h3>
+<h2>Raportti</h2>
 <!-- Varsinainen raportti käsittää selostuksen työn vaiheista ja tuloksista sekä 
 siihen liittyvistä havainnoista, ongelmista, kokemuksista ja mielipiteistä. 
 
@@ -401,6 +401,25 @@ siihen liittyvistä havainnoista, ongelmista, kokemuksista ja mielipiteistä.
 (jos jää aikaa) pienen vertailutestin. Voisitte vertailla LOD-selainten ja Googlen
  tuottamia hakutuloksia keskenään. Vertailukriteerit voisivat olla esim. 
 tulosten tarkkuus, nopeus, jne."-->
+
+<p>
+Pyrimme löytämään selaimilla jotain mitä perinteisillä vapaasana-hakuun
+pohjautuvilla hakukoneilla ei voisi löytää.  Innostus tähän tuli
+SPARQL[<a href="#sparql">3</a>]-kyselykielen tarjoamista
+mahdollisuuksista.  Selaimet eivät kuitenkaan ajatellulla tavalla
+tarjonneet tähän mahdollisuuksia.  Valituilla selaimilla ei pysty
+esimerkiksi hakemaan "Suomen kunnat, joissa on enemmän kuin 20000
+asukasta ja jonka johtajana on yli 60-vuotias mies".  Tämä on
+mahdollista SPARQLilla, joskin annettu esimerkki olettaa, että Suomen
+kunnista ja niiden johtajista löytyisi RDF-tripletteinä huomattavasti
+enemmän dataa kuin mitä niistä on juuri tällä hetkellä saatavilla.
+</p>
+
+<p>
+Selaimet ovat painottuneet koosteiden (eng. <em>mashup</em>) tekemiseen.
+Tässä käyttötarkoituksessa osa kokeilluista selaimista toimi jokseenkin
+hyvin, mutta varsinainen tiedon etsiminen on hieman hankalampaa.
+</p>
 
 <h3>Selaimet</h3>
 
@@ -448,17 +467,18 @@ width="500"/>
 </div>
 
 <p>
-Sig.ma vaikuttaa tehokkaalta työkalulta, kun sitä oppii käyttämään.
-Sig.ma koostaa tietoa monesta eri lähteestä ja tarjoaa hyvät visuaaliset
-apuvälineet lähteiden seulomiseen.
+Sig.ma on painuttunut tiedon suodattamiseen ja koosteiden
+muodostamiseen.  Sig.ma koostaa tietoa monesta eri lähteestä ja tarjoaa
+hyvät visuaaliset apuvälineet lähteiden seulomiseen.
 </p>
 
 <p>
-Todellisen hyödyn irtisaamiseksi käytettävät lähteet tulee tunnistaa 
-suhteellisen hyvin, jotta tietää minkä tyyppisestä tiedosta on kyse. Datan 
-seulonta vie aikaa, ja se on pakko suorittaa, kun on kyse yleisestä 
-hakusanasta. Sig.man hakutuloksissa näkyy myös aika paljon tietoa tripleteistä, 
-joiden nimistä on vaikea hahmottaa mistä on kyse tai mihin tieto liittyy.
+Todellisen hyödyn saamiseksi käytettävät lähteet tulee tunnistaa
+suhteellisen hyvin, jotta tietää minkä tyyppisestä tiedosta on
+kyse. Datan seulonta vie aikaa, ja se on pakko suorittaa, kun on kyse
+yleisestä hakusanasta. Sig.man hakutuloksissa näkyy myös aika paljon
+tietoa tripleteistä, joiden nimistä on vaikea hahmottaa mistä on kyse
+tai mihin tieto liittyy.
 </p>
 
 <p>
@@ -489,14 +509,14 @@ muihin sukuihin kuuluvat lajit on suodatettu pois.</p>
 </div>
 
 <p>
-Neofonie DBpedia hakukone vaikuttaa toimivan hyvin siihen tarkoitukseen,
-mihin se on luotu.  Mielenkiintoista tietoa löytää suhteellisen nopeasti
-valitsemalla hakukriteerejä valikosta.  Hakukone paremminkin löytää
-uusia mielenkiintoisia asioita, eikä varsinaisesti toimi hyvin, jos on
-tarve etsiä tietoa jostain erityisestä - DBpedian tietokanta on loppujen
-lopuksi kuitenkin aika pieni ja käyttäjän hakusanojen hyödyntäminen
-hauissa toimii huonosti.  Neofonie voisi kuitenkin olla erinomainen
-hakukone, jos kaikki verkon data olisi käytettävissä.
+Neofonie DBpedia toimii hyvin tiedon koonnissa.  Mielenkiintoista tietoa
+löytää suhteellisen nopeasti valitsemalla hakukriteerejä valikosta.
+Hakukone paremminkin löytää uusia mielenkiintoisia asioita, eikä
+varsinaisesti toimi hyvin, jos on tarve etsiä tietoa jostain erityisestä
+- DBpedian tietokanta on loppujen lopuksi kuitenkin aika pieni ja
+käyttäjän hakusanojen hyödyntäminen hauissa toimii huonosti.  Neofonie
+voisi kuitenkin olla erinomainen hakukone, jos kaikki verkon data olisi
+käytettävissä.
 </p>
 
 <p>
@@ -528,6 +548,13 @@ kokeilluilla termeillä.  Neofonien kategorianäkymät helpottavat hakua,
 samoin Sig.man lähteiden korostaminen.
 </p>
 
+<p>
+Google löytää luonnollisesti haettuja sanoja myös dokumenttien sisältä.
+Kokeillut selaimet tuntuvat vaativan kaiken RDF-tripletteinä eikä
+esimerkiksi edes jo haettujen kommenttikenttien perusteella pystynyt
+suodattamaan tuloksia lisää.
+</p>
+
 <span>
 <div style="float: right; padding: 2em;">
 <a href="images/google_john_smith.png">
@@ -552,11 +579,10 @@ Oheisissa kuvissa on Googlen ja Sig.man näkymät samasta aiheesta.
 
 <p>
 Linking Open Data on varteenotettava yritys tehdä verkon tiedosta
-käytettävämpää.  Käytettävät selaimet ovat toistaiseksi kuitenkin
-toistaiseksi varsin hitaita ja vaativat runsaasti käyttäjältään.
-Parhaiten selaimet toimivat tiedon hakemisessa lisäapuvälineinä,
-tällaisenaan niistä ei ole vielä vähään aikaan korvaamaan perinteisempiä
-hakukoneita.
+käytettävämpää.  Käytettävät selaimet ovat kuitenkin toistaiseksi varsin
+hitaita ja vaativat runsaasti käyttäjältään.  Parhaiten selaimet
+toimivat tiedon hakemisessa lisäapuvälineinä, tällaisenaan niistä ei ole
+vielä vähään aikaan korvaamaan perinteisempiä hakukoneita.
 </p>
 
 <p>
@@ -588,7 +614,7 @@ läpi, mutta yrityksen puutteesta se ei ainakaan johdu.  Tekniset
 haasteet ovat kuitenkin merkittävät.
 </p>
 
-<h3>Viitteet</h3>
+<h2>Viitteet</h2>
 
 <ul>
 
