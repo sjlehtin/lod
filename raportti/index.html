@@ -58,7 +58,7 @@ Assistentti: Markku Laine, markku.laine at tml.hut.fi
 <p>
 Tämän harjoitustyön aiheena on <a
 href="http://www.w3.org/wiki/SweoIG/TaskForces/CommunityProjects/LinkingOpenData">Linking
-Open Data</a>, W3C-projekti, joka lähti <a
+Open Data</a>, W3C:n (World Wide Web Consortium) projekti, joka lähti <a
 href="http://en.wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Leen</a>
 aloitteesta muodostaa avointa dataa <a
 href="http://en.wikipedia.org/wiki/Semantic_web">semanttisen webin</a>
@@ -112,15 +112,9 @@ yhteen uusin perustein.
 
 <p>Nykyisellään tietoa tallennetaan esimerkiksi XML:n tapaan
 hierarkkisiin dokumentteihin tai relationaalisiin tietokantoihin, kuten
-MySQL. RDF on yksi semanttisen verkon kulmakivistä määrittäen graafisen
+MySQL.  RDF on yksi semanttisen verkon kulmakivistä.  Se määrittää
 tietokannan, jonka ympärille semanttinen verkko rakentuu
 maailmanlaajuisesti.[<a href="#int">4</a>]
-</p>
-
-<p>Perinteisten tietomuotojen rakenteessa eri elementit ovat eri asemassa 
-toisiinsa nähden - toiset elementit ovat tärkeämpiä ja etusijalla toisiin nähden. 
-Esimerkiksi XML-dokumentissa kaikki elementit sijoittuvat toisten elementtien 
-sisälle, paitsi korkeimman tason elementti.[<a href="#int">4</a>]
 </p>
 
 <!-- http://www.linkeddatatools.com/images/example_graph.png -->
@@ -129,28 +123,30 @@ sisälle, paitsi korkeimman tason elementti.[<a href="#int">4</a>]
 <div class="caption">Kuva 2. Esimerkkigraafi.</div>
 </div>
 
-<p>RDF (Resource Description Framework) on standardoitu malli tiedon
+<p>
+RDF (Resource Description Framework) on standardoitu malli tiedon
 vaihtamiseen verkossa. RDF:n ominaisuuksiin kuuluu että se pystyy
 käsittelemään monen eri tietomallin sisältämää tietoa yhdessä. RDF
-laajentaa verkon linkkirakennetta käyttäen URI:a nimeämään eri
-elementtien välisiä suhteita sekä linkkien osoittajia ja
-osoitettavia. Toimintamalli mahdollistaa muodostamaan eri lähteistä
+laajentaa verkon linkkirakennetta käyttäen URI:ta (Universal Resource
+Identifier) nimeämään eri elementtien välisiä suhteita sekä linkkien
+osoittajia ja osoitettavia. Toimintamalli mahdollistaa eri lähteistä
 muodostetun tiedon uudelleenjärjestämistä, tarkastelemista ja jakamista
-eri sovellusten välillä.[<a href="#rdf">5</a>] RDF määrittää graafisen
-tietokannan.</p>
+eri sovellusten välillä.[<a href="#rdf">5</a>]
+</p>
 
-<p>Graafisessa tietokannassa ei ole hierarkiaa ja tieto koostuu
-tiedoista, jotka liittyvät toisiinsa. Graafin eri osia kutsutaan
-subjektiksi, predikaatiksi ja objektiksi, jotka yhdessä muodostavat
-"triplen" (triple). Subjekti on pallo nuolen kannassa, predikaatti on
-nuoli ja objektina pidetään sitä, mihin nuoli osoittaa.[<a
-href="#rdf">5</a>]</p>
+<p>
+RDF:n avulla muodostetussa tietokannassa ei ole hierarkiaa ja tietämys
+muodostuu tripleteistä jotka linkittyvät toisiinsa.  Yksi tapa kuvata
+tätä tietokantaa on graafi.  Graafin eri osat ovat subjekti, predikaatti
+ja objekti, ja yhdessä ne muodostavat tripletin.  Subjekti on pallo
+nuolen kannassa, predikaatti on nuoli ja nuolen kärki osoittaa
+objektiin.[<a href="#rdf">5</a>]
+</p>
 
 <h5>RDF/XML</h5>
 
-RDF/XML on XML-pohjainen serialisaatioformaatti RDF:lle. RDF/XML on
-W3C:n kehittämä syntaksi, jolla tuotetaan RDF-graafeja XML
-dokumentteihin. RDF/XML on yksi suosituimmista RDF:n murteista verkossa.
+RDF/XML on W3C:n kehittämä XML-pohjainen serialisaatioformaatti RDF:lle.
+RDF/XML on yksi suosituimmista RDF:n murteista verkossa.
 
 <h4>OWL[<a href="#owl2">1</a>]</h4>
 
@@ -167,10 +163,13 @@ LOD-projektin tiedosta suurin osa on jossakin OWL-formaatissa.
 
 <h4>SPARQL[<a href="#sparql">2</a>][<a href="#sparql-wiki">3</a>]</h4>
 
-SPAQRL on kyselykieli RDF-muotoiselle tiedolle.
-
+<p>
+SPARQL on kyselykieli RDF-muotoiselle tiedolle.
+</p>
+</p>
 Kyselyä voi tarkentaa lisäämällä termejä ja kyselyt voivat olla
 hajautettuja.
+</p>
 
 <h3>Selaimet</h3>
 
@@ -178,17 +177,18 @@ hajautettuja.
 
 <a
 href="http://dig.csail.mit.edu/2005/ajar/ajaw/About.html">Tabulator</a>
-on selain semanttiselle webille.  Selain on rakennuttu lisäkkeeksi
+on selain semanttiselle webille.  Selain on rakennettu lisäkkeeksi
 Firefox-selaimeen.
 
-Selainta ei löytynyt ainakaan suoralla Firefoxin Add-on-haulla, tilalle
-tarjottiin <a href="http://sioc-project.org/firefox">Semantic
+Selainta ei löytynyt ainakaan suoralla Firefoxin Add-on-haulla.  Sen
+tilalle tarjottiin <a href="http://sioc-project.org/firefox">Semantic
 Radar</a>-lisäkettä, ks. <a href="#sradar">alla</a>.
 
 <h4 id="sradar">Semantic Radar</h4>
 
 <p>
-<a href="http://sioc-project.org/firefox">Semantic Radar</a> lisää painikkeen Firefoxin status-riville.  Toimivuus ei vakuuttanut.
+<a href="http://sioc-project.org/firefox">Semantic Radar</a> lisää
+painikkeen Firefoxin status-riville.  Toimivuus ei vakuuttanut.
 </p>
 
 <h4>Linked Data Lite</h4>
@@ -207,7 +207,7 @@ on testattavissa myöhemmin.[<a href="#razor">8</a>]
 <h4>Zitgist RDF Browser</h4>
 
 Zitgist DataViewer tarjoaa käyttöliittymän, joka muuttaa semanttisen
-verkon dataa muotoon, jota on ihmisenä helppo tutkia. Järjestelmä ottaa
+verkon dataa muotoon, jota ihmisen on helpompi tutkia. Järjestelmä ottaa
 vastaan tietolähteen, josta se poimii ja järjestelee datan helposti
 tarkasteltavaan muotoon.[<a href="#zit">7</a>]
 <br>
@@ -228,15 +228,15 @@ RDF:n toiminnallisuutta.
 Sig.ma on <a href="http://www.sindice.com/">Sinidicen</a> päällä toimiva
 sovellus, joka tarjoaa visuaalisesti ja interaktiivisesti verkkodataa
 kokonaisuutena. Sig.ma etsii dataa annettujen avainsanojen perusteella
-valimiiksi asetetuista lähteistä, joita voi halutessaan lisätä ja
-poistaa.  Toimii suhteellisen nopeasti ja käyttöliittymä vaikuttaa
-selkeältä. Kun osoittaa hiirellä dataa, Sig.ma korostaa lähteet joista
-tieto on peräisin - toimii myös toisin päin.[<a href="#sig">6</a>]
-<br><br> <a
+valmiiksi asetetuista lähteistä, joita voi halutessaan lisätä ja
+poistaa.  Selain toimii suhteellisen nopeasti ja käyttöliittymä
+vaikuttaa selkeältä. Viemällä osoittimen kiinnostavan datan kohdalle
+Sig.ma korostaa lähteet joista tieto on peräisin - toimii myös toisin
+päin.[<a href="#sig">6</a>] <br><br> <a
 href="http://sig.ma/search?q=Tim%20Berners%20Lee">Esimerkki.</a>
 </p>
 
-<h4>OpenLink Data Explorer 0.28[<a href="#olde">13</a>]</h4> 
+<h4>OpenLink Data Explorer[<a href="#olde">13</a>]</h4> 
 <p>
 Toimii lisäosana Firefoxiin.
 </p>
@@ -252,7 +252,7 @@ Toimii lisäosana Firefoxiin.
 </ul>
 
 <p>
-On mahdollista, että joidenkin selaimien huonoon toimivuuteen löytyy syy
+On mahdollista, että joidenkin selainten huonoon toimivuuteen löytyy syy
 yhden tai useamman lähteen putoamiseen verkosta, josta selaimet eivät
 toipuneet.
 </p>
@@ -266,7 +266,9 @@ Wikipedian tietoa muunnettuna RDF-tripleteiksi. [<a
 href="#dbpedia">9</a>]
 </li>
 <li>
-<a href="http://wordnet.princeton.edu/">Wordnettiin</a> voidaan viitata <a href="http://semanticweb.cs.vu.nl/lod/wn30/">RDF linkeillä</a>.[<a href="#wordnet">10</a>]
+<a href="http://wordnet.princeton.edu/">Wordnettiin</a> voidaan viitata
+<a href="http://semanticweb.cs.vu.nl/lod/wn30/">RDF-linkeillä</a>.[<a
+href="#wordnet">10</a>]
 </li>
 </ul>
 
@@ -293,16 +295,12 @@ joita Sig.ma ei suoraan tarjoa.
 
 <p>
 Tavallisesti hakukoneet (mm. Google, Yahoo, Bing) eivät osaa erottaa
-esimerkiksi samannimisiä henkilöitä toisistaan. Voidaan esimerkiksi
-hakea tietoa skotlantilaisesta urheilijasta nimeltä John Smith.
-</p>
-
-<p>
-Haku <em>"John Smith"</em> ei kerro kenestä on
-kyse. Sanan <em>"sport"</em> lisääminen hakuun auttaa olennaisten
-tulosten saamista tuottaen silti tuloksia, jotka eivät koske haluttua
-henkilöä. Sig.ma:ssa lähteet voidaan asettaa niin, että kaikki tieto
-koskee haluttua kohdetta.
+samannimisiä henkilöitä toisistaan. Voidaan esimerkiksi hakea tietoa
+skotlantilaisesta urheilijasta nimeltä John Smith.  Haku "<em>John
+Smith</em>" ei kerro kenestä on kyse. Sanan "<em>sport</em>" lisääminen
+hakuun auttaa olennaisten tulosten saamista tuottaen silti tuloksia,
+jotka eivät koske haluttua henkilöä. Sig.ma:ssa lähteet voidaan asettaa
+niin, että kaikki tieto koskee haluttua kohdetta.
 </p>
 
 <h4>Neofonie[<a href="#neo">12</a>]</h4> 
@@ -362,7 +360,7 @@ dbo:author → William Shakespeare
 
 <h4>Muita mahdollisuuksia</h4>
 
-<h5>RDF-datan luonti ja selaimien testaaminen sen avulla</h5>
+<h5>RDF-datan luonti ja selainten testaaminen sen avulla</h5>
 
 Jos aikaa jää, tavoitteena olisi myös luoda joitain RDF-triplettejä ja
 kokeilla miten selaimet suhtautuvat tähän uuteen lähteeseen.
@@ -375,7 +373,7 @@ saattaisi saada jotain tuloksia esimerkiksi Sig.ma-selainta hyödyntäen.
 <h5>SPARQL-kyselyt</h5>
 
 Useimmat selaimet käyttävät jotain SPARQL-hakurajapintaa.  Kyselyitä voi
-kirjoittaa myös itse käsin useampaankin palveluun.  Jos yllälistatut
+kirjoittaa myös itse käsin useampaankin palveluun.  Jos yllä listatut
 selaimet jättävät liikaa toivottavaa, voi kyselyjä kokeilla myös suoraan
 SPARQL-kielellä.
 
@@ -406,19 +404,19 @@ linkitetyn tiedon tutkimiseen.
 Pyrimme löytämään selaimilla jotain mitä perinteisillä vapaasana-hakuun
 pohjautuvilla hakukoneilla ei voisi löytää.  Innostus tähän tuli
 SPARQL[<a href="#sparql">3</a>]-kyselykielen tarjoamista
-mahdollisuuksista.  Selaimet eivät kuitenkaan tarjonneet tähän
-mahdollisuuksia ajatellulla tavalla.  Valituilla selaimilla ei pysty
+mahdollisuuksista.  Selaimet eivät kuitenkaan toteuttaneet näitä
+odotuksia ajatellulla tavalla.  Valituilla selaimilla ei pysty
 esimerkiksi hakemaan "Suomen kunnat, joissa on enemmän kuin 20000
 asukasta ja jonka johtajana on yli 60-vuotias mies".  Tämä on
-mahdollista SPARQLilla, joskin annettu esimerkki olettaa, että Suomen
+mahdollista SPARQL:lla, joskin annettu esimerkki olettaa, että Suomen
 kunnista ja niiden johtajista löytyisi RDF-tripletteinä huomattavasti
 enemmän dataa kuin mitä niistä on juuri tällä hetkellä saatavilla.
 </p>
 
 <p>
-Selaimet ovat painottuneet koosteiden (eng. <em>mashup</em>) tekemiseen.
+Selaimet ovat painottuneet koosteiden (engl. <em>mashup</em>) tekemiseen.
 Tässä käyttötarkoituksessa osa kokeilluista selaimista toimi jokseenkin
-hyvin, mutta varsinainen tiedon etsiminen on hieman hankalampaa.
+hyvin, mutta varsinainen tiedon etsiminen oli hieman hankalampaa.
 </p>
 
 <h4>ODE</h4>
@@ -431,16 +429,16 @@ hyvin, mutta varsinainen tiedon etsiminen on hieman hankalampaa.
 </div>
 
 <p>
-ODE ei varsinaisesti auttanut tiedon etsimisessä sinänsä, joskin saattaa
-auttaa lisätietojen metsästyksessä.  Linkit ja kuvat pistävät silmään
-ODEn tulostetta selatessa.  ODEsta ei kuitenkaan ole hyötyä ellei ole jo
-valmiiksi ideaa miltä sivustolta informaatiota pitäisi etsiä.
-Pikemminkin se auttaa etsimään lisätietoja kun aihe on tiedossa ja pari
-hakukonetulosta on jo löydetty.
+ODE ei varsinaisesti auttanut tiedon etsimisessä sinänsä, joskin se
+saattaa auttaa lisätietojen metsästyksessä.  Linkit ja kuvat
+kiinnittävät huomion ODE:n tulostetta selatessa.  ODE:sta ei kuitenkaan
+ole hyötyä ellei ole jo valmiiksi ideaa miltä sivustolta informaatiota
+pitäisi etsiä.  Pikemminkin se auttaa etsimään lisätietoja kun aihe on
+tiedossa ja pari hakukonetulosta on jo löydetty.
 </p>
 
 <p>
-ODEn hakutoimintoon voi syöttää URIn, mutta minkäänlaista
+ODE:n hakutoimintoon voi syöttää URI:n, mutta minkäänlaista
 vapaasana-hakua ei löytynyt.
 </p>
 
@@ -448,8 +446,8 @@ vapaasana-hakua ei löytynyt.
 Kiinnostavampaa aineistoa löytyy kun järjestää tulostetta
 <tt>foaf:topic</tt>-resurssin mukaan.  Tämä siis listaa verkkosivuja
 joissa annettu URI on aiheena.  Käyttäen esimerkiksi George W. Bushia
-lähteenä saadaan mm. oheisen kuvan kaltaisia tuloksia.  Tosin,
-esimerkiksi Googlella on vastaavien linkkien löytäminen verrattain
+lähteenä saadaan mm. oheisen kuvan kaltaisia tuloksia.  Tosin
+esimerkiksi Googlella vastaavien linkkien löytäminen on verrattain
 helppoa.
 </p>
 
@@ -464,45 +462,46 @@ pelkästään RDF-kategorioilla ei tuota erityisen hyödyllisiä syötteitä.
 
 <div style="float: right;" id="kuva4">
 <a href="images/sig.ma_lemurit.png">
-<img alt="Madagascarin erikoisuus, lemurit." src="images/sig.ma_lemurit.png" 
+<img alt="Madagaskarin erikoisuus, lemurit." src="images/sig.ma_lemurit.png" 
 width="500"/>
 </a>
-<div class="caption">Kuva 4. Madagascarin erikoisuus, lemurit.</div>
+<div class="caption">Kuva 4. Madagaskarin erikoisuus, lemurit.</div>
 </div>
 
 <p>
-Sig.ma on painuttunut tiedon suodattamiseen ja koosteiden
+Sig.ma on painottunut tiedon suodattamiseen ja koosteiden
 muodostamiseen.  Sig.ma koostaa tietoa monesta eri lähteestä ja tarjoaa
 hyvät visuaaliset apuvälineet lähteiden seulomiseen.
 </p>
 
 <p>
 Todellisen hyödyn saamiseksi käytettävät lähteet tulee tunnistaa
-suhteellisen hyvin, jotta tietää minkä tyyppisestä tiedosta on
-kyse. Datan seulonta vie aikaa, ja se on pakko suorittaa, kun on kyse
-yleisestä hakusanasta. Sig.man hakutuloksissa näkyy myös aika paljon
+suhteellisen hyvin, jotta tietää minkä tyyppisestä tiedosta on kyse.
+Datan seulonta vie aikaa, ja se on pakko suorittaa, kun on kyse
+yleisestä hakusanasta.  Sig.man hakutuloksissa näkyy myös aika paljon
 tietoa tripleteistä, joiden nimistä on vaikea hahmottaa mistä on kyse
 tai mihin tieto liittyy.
 </p>
 
 <p>
 Googlen hakukoneeseen verrattuna Sig.ma voisi toimia joissain
-tilanteissa paremmin. Jos tietoa esimerkiksi halutaan hakea vain
-tietyistä "luotettavista" lähteistä tai jos on tarvetta tarkastella
+tilanteissa paremmin, esimerkiksi silloin, jos tietoa halutaan hakea
+vain tietyistä "luotettavista" lähteistä tai jos on tarvetta tarkastella
 aihetta koskevaa tietoa monesta eri lähteestä samanaikaisesti.
 </p>
 
 <p>
 Myös aikaisemmin mainittu monimerkityksellisen hakusanan väärien
-tulosten pois sulkeminen on mahdollista Sig.massa. Kuvissa <a
+tulosten poissulkeminen on mahdollista Sig.massa.  Kuvissa <a
 href="#kuva6">6</a> ja <a href="#kuva7">7</a> on Googlen ja Sig.man
 tulokset hakusanasta "<em>John Smith Footballer</em>".  Molempien
-hakukoneiden tuloksissa näkyy kaksi eri John Smithiä. Sig.man tuloksista
-voidaan helposti poistaa lähteet jotka koskevat väärää henkilöä.
+hakukoneiden tuloksissa näkyy kaksi eri John Smithiä.  Sig.man
+tuloksista voidaan helposti poistaa lähteet jotka koskevat väärää
+henkilöä.
 </p>
 
 <p>
-Esimerkkinä kooste <i>Lemuridae</i> suvun lemureista.  Syötteenä
+Esimerkkinä kooste <em>Lemuridae</em> suvun lemureista.  Syötteenä
 käytetty hakusanaa <tt>lemur</tt> jonka jälkeen fiktiiviset syötteet ja
 muihin sukuihin kuuluvat lajit on suodatettu pois.</p>
 
@@ -510,7 +509,7 @@ muihin sukuihin kuuluvat lajit on suodatettu pois.</p>
 
 <div style="float: right;" id="kuva5">
 <a href="images/neofonie_lemurit.png">
-<img alt="Madagascarin erikoisuus, lemurit, Neofonien versio." 
+<img alt="Madagaskarin erikoisuus, lemurit, Neofonien versio." 
      src="images/neofonie_lemurit.png"  width="500"/>
 </a>
 <div class="caption">Kuva 5. Lemurit Neofonien versiossa.</div>
@@ -534,11 +533,11 @@ DBpediasta, Neofonie voisi toimia joihinkin tarkoituksiin paremmin.
 </p>
 
 <p>
-Jos Neofonieta koittaa käyttää samalla tavalla kuin Googlea, vaikuttaa
+Jos Neofonieta koettaa käyttää samalla tavalla kuin Googlea, vaikuttaa
 siltä että hakutuloksia tulee satunnaisesti niistä artikkeleista, joissa
 hakusanat ilmenevät.  Google antaa tuloksiaan perustuen siihen, missä
-tunnisteissa hakusanat ilmenevät sekä kuinka monta ja kuinka vahvoja
-linkkejä artikkeliin osoittaa.
+tunnisteissa hakusanat ilmenevät sekä kuinka monta linkkiä artikkeliin
+osoittaa ja kuinka vahvoja ne ovat.
 </p>
 
 <h4 style="clear: both;">Vertailua Googlen hakukoneeseen</h4>
@@ -587,9 +586,10 @@ Oheisissa kuvissa on Googlen ja Sig.man näkymät samasta aiheesta.
 <p>
 Linking Open Data on varteenotettava yritys tehdä verkon tiedosta
 käytettävämpää.  Käytettävät selaimet ovat kuitenkin toistaiseksi varsin
-hitaita ja vaativat runsaasti käyttäjältään.  Parhaiten selaimet
-toimivat tiedon hakemisessa lisäapuvälineinä, tällaisenaan niistä ei ole
-vielä vähään aikaan korvaamaan perinteisempiä hakukoneita.
+hitaita ja vaativat runsaasti kärsivällisyytä ja osaamista
+käyttäjältään.  Parhaiten selaimet toimivat tiedon hakemisessa
+lisäapuvälineinä, eikä niistä tällaisenaan ei ole vielä vähään aikaan
+korvaamaan perinteisempiä hakukoneita.
 </p>
 
 <p>
@@ -597,19 +597,19 @@ SPARQL[<a href="#sparql">3</a>]-dokumentista jäi mieleen tunne
 valtavasta potentiaalista tälle teknologialle.  Valitettavasti käsillä
 olevat selaimet eivät tunnu vielä pystyvän tuota potentiaalia
 hyödyntämään.  Teknologia on toki vielä keskeneräistä ja ratkomattomia
-ongelmia on paljon, johtuen datan ja sen jakamiseen käytettyjen
+ongelmia on paljon johtuen datan ja sen jakamiseen käytettyjen
 palvelinten luonteesta ja hajautuneisuudesta.
 </p>
 
 <p>
-Linked Data on kuitenkin tärkeä päänavaus.  Maailmassa on hirvittävästi
-dataa, joka ollessaan saatavilla mahdollistaisi mahtavia asioita, kun
-ihmiset voisivat tuottaa tuosta tiedosta lisäarvoa.  Hallituksilla on
-raakadataa yhteyskunnan toiminnoista, joita yksityiset henkilöt voisivat
-työstää jo ennen kuin tuosta tiedosta on "virallista" koostetta.
-Tiedeyhteisö voisi saattaa tutkimustuloksensa yleisön saataville, jos ei
-muusta syystä, niin epäilysten hälventämiseksi poliittisesti
-tulenarkojen tutkimusten ympäriltä.
+Linked Data on kuitenkin tärkeä päänavaus.  Maailmassa on valtavan
+paljon dataa, joka ollessaan saatavilla mahdollistaisi mahtavia asioita,
+kun ihmiset voisivat tuottaa tuosta tiedosta lisäarvoa.  Hallituksilla
+on raakadataa yhteiskunnan toiminnoista, joita yksityiset henkilöt
+voisivat työstää jo ennen kuin tuosta tiedosta on "virallista"
+koostetta.  Tiedeyhteisö voisi saattaa tutkimustuloksensa yleisön
+saataville, jos ei muusta syystä, niin epäilysten hälventämiseksi
+poliittisesti tulenarkojen tutkimusten ympäriltä.
 </p>
 
 <p>
