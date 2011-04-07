@@ -2,6 +2,9 @@
 <html>
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <style type="text/css">
+     .caption { font-size: smaller;  text-align: center; }
+   </style>
   <title>
     Linking Open Data
   </title>
@@ -67,8 +70,12 @@ tietoon.  Projektissa on kerätty suuria arkistoja käsitteitä ja dataa.
 Arkistot koostuvat enimmäkseen RDF-dataseteistä.
 </p>
 
-<div style="float: right;">
-<a href="http://richard.cyganiak.de/2007/10/lod/lod-datasets_2010-09-22_colored.svg"><img alt="Datasettien linkkejä visualisoiva graafi." src="images/lod-datasets_2010-09-22_colored.png" width="500"/></a>
+<div style="float: right;" id="kuva1">
+<a href="http://richard.cyganiak.de/2007/10/lod/lod-datasets_2010-09-22_colored.svg">
+<img alt="Datasettien linkkejä visualisoiva graafi."
+     src="images/lod-datasets_2010-09-22_colored.png" width="500"/>
+</a>
+<div class="caption">Kuva 1. Linked Data -pilvi vuodelta 2010.</div>
 </div>
 
 <p>
@@ -117,8 +124,9 @@ sisälle, paitsi korkeimman tason elementti.[<a href="#int">4</a>]
 </p>
 
 <!-- http://www.linkeddatatools.com/images/example_graph.png -->
-<div style="float: left; padding: 2em;">
-<img src="images/example_graph.png" alt="esimerkkigraafi"/> 
+<div style="float: left; padding: 2em;" id="kuva2">
+<img src="images/example_graph.png" alt="Esimerkkigraafi"/> 
+<div class="caption">Kuva 2. Esimerkkigraafi.</div>
 </div>
 
 <p>RDF (Resource Description Framework) on standardoitu malli tiedon
@@ -144,12 +152,12 @@ RDF/XML on XML-pohjainen serialisaatioformaatti RDF:lle. RDF/XML on
 W3C:n kehittämä syntaksi, jolla tuotetaan RDF-graafeja XML
 dokumentteihin. RDF/XML on yksi suosituimmista RDF:n murteista verkossa.
 
-<h4>OWL</h4>
+<h4>OWL[<a href="#owl2">1</a>]</h4>
 
 <p>
 <a href="http://www.w3.org/TR/owl2-overview/">OWL (Web Ontology
 Language)</a> on semanttisessa webissä käytetty tietämyksen esittämiseen
-tarkoitettu kieli<a href="#owl2">1</a>.  
+tarkoitettu kieli.
 </p>
 
 <p>
@@ -157,10 +165,9 @@ Kaikkien OWL-implementaatioiden pitää ymmärtää RDF/XML:ää.
 LOD-projektin tiedosta suurin osa on jossakin OWL-formaatissa.
 </p>
 
-<h4>SPARQL</h4>
+<h4>SPARQL[<a href="#sparql">2</a>][<a href="#sparql-wiki">3</a>]</h4>
 
-SPAQRL on kyselykieli RDF-muotoiselle tiedolle.[<a
-href="#sparql">2</a>][<a href="#sparql-wiki">3</a>]
+SPAQRL on kyselykieli RDF-muotoiselle tiedolle.
 
 Kyselyä voi tarkentaa lisäämällä termejä ja kyselyt voivat olla
 hajautettuja.
@@ -229,7 +236,7 @@ tieto on peräisin - toimii myös toisin päin.[<a href="#sig">6</a>]
 href="http://sig.ma/search?q=Tim%20Berners%20Lee">Esimerkki.</a>
 </p>
 
-<h4>OpenLink Data Explorer 0.28[<a href="#olde">XXX</a>]</h4> 
+<h4>OpenLink Data Explorer 0.28[<a href="#olde">13</a>]</h4> 
 <p>
 Toimii lisäosana Firefoxiin.
 </p>
@@ -425,8 +432,9 @@ hyvin, mutta varsinainen tiedon etsiminen on hieman hankalampaa.
 
 <h4>ODE</h4>
 
-<div style="float: right;">
+<div style="float: right;" id="kuva3">
 <img alt="Puheenaiheena GWB." src="images/gwb.png" width="500"/>
+<div class="caption">Kuva 3. GWB muualla.</div>
 </div>
 
 <p>
@@ -461,9 +469,10 @@ pelkästään RDF-kategorioilla ei tuota erityisen hyödyllisiä syötteitä.
 
 <h4 style="clear: both;">Sig.ma</h4>
 
-<div style="float: right;">
+<div style="float: right;" id="kuva4">
 <img alt="Madagascarin erikoisuus, lemurit." src="images/sig.ma_lemurit.png" 
 width="500"/>
+<div class="caption">Kuva 4. Madagascarin erikoisuus, lemurit.</div>
 </div>
 
 <p>
@@ -490,11 +499,11 @@ aihetta koskevaa tietoa monesta eri lähteestä samanaikaisesti.
 
 <p>
 Myös aikaisemmin mainittu monimerkityksellisen hakusanan väärien
-tulosten pois sulkeminen on mahdollista Sig.massa. Esimerkisssä [kuva]
-on Googlen ja Sig.man tulokset hakusanasta "<em>John Smith
-Footballer</em>".  Molempien hakukoneiden tuloksissa näkyy kaksi eri
-John Smithiä. Sig.man tuloksista voidaan helposti poistaa lähdeet jotka
-koskevat väärää henkilöä.
+tulosten pois sulkeminen on mahdollista Sig.massa. Kuvissa <a
+href="#kuva6">6</a> ja <a href="#kuva7">7</a> on Googlen ja Sig.man
+tulokset hakusanasta "<em>John Smith Footballer</em>".  Molempien
+hakukoneiden tuloksissa näkyy kaksi eri John Smithiä. Sig.man tuloksista
+voidaan helposti poistaa lähdeet jotka koskevat väärää henkilöä.
 </p>
 
 <p>
@@ -504,9 +513,10 @@ muihin sukuihin kuuluvat lajit on suodatettu pois.</p>
 
 <h4 style="clear: both;">Neofonie</h4>
 
-<div style="float: right;">
+<div style="float: right;" id="kuva5">
 <img alt="Madagascarin erikoisuus, lemurit, Neofonien versio." 
      src="images/neofonie_lemurit.png"  width="500"/>
+<div class="caption">Kuva 5. Madagascarin erikoisuus, Neofonien versio.</div>
 </div>
 
 <p>
@@ -557,17 +567,17 @@ suodattamaan tuloksia lisää.
 </p>
 
 <span>
-<div style="float: right; padding: 2em;">
+<div style="float: right; padding: 2em;" id="kuva7">
 <a href="images/google_john_smith.png">
 <img src="images/google_john_smith.png"  width="300"/></a>
 </a>
-<div style="font-size: smaller;">Google.</div>
+<div class="caption">Kuva 7. Googlen näkymä.</div>
 </div>
-<div style="float: right; padding: 2em;">
+<div style="float: right; padding: 2em;" id="kuva6">
 <a href="images/sig.ma_john_smith.png">
 <img src="images/sig.ma_john_smith.png"  width="300"/>
 </a>
-<div style="font-size: smaller;">Sig.ma.</div>
+<div class="caption">Kuva 6. Sig.ma.</div>
 </div>
 </span>
 
